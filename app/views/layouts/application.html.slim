@@ -1,6 +1,6 @@
 html
   head
-    title Wellcode Global
+    title Dashboard Chart
     = csrf_meta_tags
 
     meta charset="UTF-8" /
@@ -31,5 +31,5 @@ html
     = javascript_include_tag src="https://code.highcharts.com/modules/solid-gauge.js"
     = javascript_include_tag "application"
     
-  body class=("#{controller_name} #{action_name}")
+  body
     = yield
