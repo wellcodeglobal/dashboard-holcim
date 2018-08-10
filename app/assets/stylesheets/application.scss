@@ -1,0 +1,512 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.container-100 {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.row {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+.row-100 {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif !important;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+header,
+nav,
+main,
+section,
+footer {
+    display: block;
+}
+
+a {
+    color: #0b0b0b;
+    background: transparent;
+    text-decoration: none;
+    &:active,
+    &:hover,
+    &:link,
+    &:visited {
+        color: #0b0b0b;
+        background: transparent;
+        text-decoration: none;
+    }
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.col-1 {
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.col-2 {
+    flex: 0 0 16.66666667%;
+    max-width: 16.66666667%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+}
+
+.col-5 {
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+}
+
+.col-8 {
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.33333333%;
+    max-width: 83.33333333%;
+}
+
+.col-11 {
+    flex: 0 0 91.66666667%;
+    max-width: 91.66666667%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.wrapper {
+    padding: .75em;
+}
+
+.row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.row-100 {
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.centered-items {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.wh-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.justify-content-start {
+    -webkit-box-pack: start !important;
+    -webkit-justify-content: flex-start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center;
+}
+
+.justify-content-end {
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.shadow {
+    box-shadow: 0 -7px 10px -10px #0b0b0b inset;
+    &__outset {
+        box-shadow: 0px 1px 10px 0px #0b0b0b;
+        &--sm {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.spacer {
+    margin: 1.5em auto;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.btn {
+    line-height: 49px;
+    padding: 0 35px;
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    @at-root #{&}--sm {
+        border-radius: 5px;
+        border: none;
+        padding: .5em 1em;
+        cursor: pointer;
+    }
+}
+
+.btn-standard {
+    background: #0b0b0b !important;
+    background: linear-gradient(-180deg, #4f4f4f 0%, #0b0b0b 90%) !important;
+    color: #fff !important;
+    & svg {
+        margin-right: .35em;
+    }
+    &:hover {
+        background: #000 !important;
+        background: linear-gradient(-180deg, #444444 0%, #000000 90%) !important
+    }
+    @at-root #{&}--primary {
+        background-color: #22A9CB !important;
+        color: #fff !important;
+        box-shadow: 0 0 35px 5px rgba(0, 0, 0, 0.1);
+        transition: all .3s ease-in-out;
+        transition-delay: 0s;
+        &:hover {
+            background-color: #fff !important;
+            color: #000 !important;
+        }
+    }
+    @at-root #{&}--delete {
+        background: #fb2424 !important;
+        background: linear-gradient(-180deg, #fb2424 0%, #b50000 90%) !important;
+        color: #fff !important;
+        &:hover {
+            background: linear-gradient(-180deg, #e84141 0%, #ad0606 90%) !important;
+        }
+    }
+}
+
+.color-blue {
+    color: #099ea0 !important;
+}
+
+.color-red {
+    color: #D50000 !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.color-black {
+    color: #0b0b0b !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.title {
+    display: block;
+    overflow: hidden;
+    margin: .25em 0;
+    &__text {
+        font-size: 22px;
+        font-weight: 600;
+        &--non-bold {
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    +.content {
+        padding-top: 44.4px;
+    }
+    &--side {
+        position: fixed;
+        top: 46px;
+        width: 20%;
+        z-index: 1000;
+    }
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.charts {
+    width: 100%;
+    min-height: 350px;
+    margin: 1em auto;
+    &--2 {
+        min-height: 300px;
+    }
+}
+
+#today-1 {
+    width: 50%;
+    float: left;
+}
+
+#today-2 {
+    width: 50%;
+    float: left;
+}
+
+.box {
+    background-color: #fff;
+    padding: 1em;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 700;
+    &__detail {
+        color: #808080;
+        font-size: 18px;
+        &--2 {
+            font-size: 15px;
+        }
+    }
+    &__number {
+        color: #0c9100;
+        font-size: 24px;
+        &--2 {
+            color: #000;
+            margin: .25em auto;
+        }
+    }
+    &__change {
+        font-size: 12px;
+        color: #808080;
+        &--up {
+            color: #0c9100;
+            &::before {
+                content: "\2191";
+                margin: 0 .25em;
+            }
+        }
+        &--down {
+            color: #b50000;
+            &::before {
+                content: "\2193";
+                margin: 0 .25em;
+            }
+        }
+    }
+}
