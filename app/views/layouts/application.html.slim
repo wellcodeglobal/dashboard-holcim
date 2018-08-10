@@ -22,14 +22,14 @@ html
 
     = stylesheet_link_tag "application", media: "all"
 
+    = javascript_include_tag src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
     = javascript_include_tag src="https://code.highcharts.com/highcharts.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/series-label.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/exporting.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/export-data.js"
     = javascript_include_tag src="https://code.highcharts.com/highcharts-more.js"
     = javascript_include_tag src="https://code.highcharts.com/modules/solid-gauge.js"
+    = javascript_include_tag params[:controller]
     
   body class=("#{controller_name} #{action_name}")
     = yield
-  
-    = javascript_include_tag params[:controller]
